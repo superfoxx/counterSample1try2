@@ -6,13 +6,16 @@ function App() {
     let [count, setCount] = useState([0, 0, 0, 1])
 
     const minus = () => {
-        count.pop([count.length-1]);
-        setCount(count);
+        let newArr = [...count];
+        newArr.pop(0);
+        setCount(newArr);
         console.log('minus', count)
     }
+
     const plus = () => {
-        count.push(1);
-        setCount(count);
+        let newArr = [...count];
+        newArr.push(0);
+        setCount(newArr);
         console.log('minus', count)
     }
     const counterPlus = (lol) => {
