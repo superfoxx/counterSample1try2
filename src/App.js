@@ -30,8 +30,8 @@ function App() {
     }
 
     const counterMinus = (index) => {
-        const newArr = count.map((el, i) =>{
-            if (index === i){
+        const newArr = count.map((el, ind) =>{
+            if (index === ind){
                 return el - 1
             }
             return el
